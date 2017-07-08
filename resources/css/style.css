@@ -79,3 +79,55 @@ header li {
   padding: 0.5rem 0 0.5rem 0;
   text-align: center;
 }
+
+/* Main Styles */
+
+#main {
+  border: 2px dashed purple;
+  display: inline-flex;
+}
+
+#main .info {
+  border: 2px dotted firebrick;
+}
+
+#main .info img {
+  width: 60%;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+}
+
+#main .info p {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+#main .column {
+  border: 2px dashed orange;
+  width: 423px;
+}
+
+#main .column .container {
+  border: 2px dashed black;
+  display: flex;
+  align-items: center;
+}
+
+#main .column img {
+  width: 35%;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+#main .column h6 {
+  font-weight: bold;
+}
+
+#main .column span {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.column .lecture {
+  background-color: rgb(218, 218, 218);
+}
+
+.column a {
+  color: rgb(141, 201, 247);
+}
