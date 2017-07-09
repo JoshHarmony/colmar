@@ -178,3 +178,31 @@ header li {
 #courses p {
   margin: 0.5rem 0 1.5rem 1rem;
 }
+
+/* Exhibit Styles */
+
+#exhibit {
+  border: 2px solid red;
+}
+
+#exhibit .content {
+  border: 2px dashed blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+video {
+  width: 40%;
+}
+
+#exhibit .column {
+  border: 2px dotted green;
+}
+
+#exhibit img {
+  width: 45%;
+}
+
+#exhibit .container {
+  border: 1px dashed orange;
+}
