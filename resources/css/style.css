@@ -85,6 +85,7 @@ header li {
 #main {
   border: 2px dashed purple;
   display: inline-flex;
+  background-color: rgb(255, 255, 255);
 }
 
 #main .info {
@@ -102,7 +103,7 @@ header li {
 
 #main .column {
   border: 2px dashed orange;
-  width: 423px;
+  width: auto;
 }
 
 #main .column .container {
@@ -130,4 +131,50 @@ header li {
 
 .column a {
   color: rgb(141, 201, 247);
+}
+
+/* Courses Styles */
+
+#courses {
+  border: 2px ridge blue;
+  background-color: rgb(218, 218, 218);
+}
+
+#courses h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#courses .content {
+  border: 2px groove red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+#courses .container {
+  border: 2px groove green;
+  background-color: rgb(255, 255, 255);
+  width: 20rem;
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+#courses img {
+  width: 100%;
+}
+
+#courses h5 {
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 1rem;
+}
+
+#courses span {
+  margin-left: 1rem;
+}
+
+#courses p {
+  margin: 0.5rem 0 1.5rem 1rem;
 }
