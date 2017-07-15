@@ -1,13 +1,33 @@
 /* Universal Styles */
 
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Zilla Slab Light'), local('ZillaSlab-Light'), url(https://fonts.gstatic.com/s/zillaslab/v1/MIkI-zFTb-IKu6GQ4qfBIYo3ZslTYfJv0R05CazkwN8.woff) format('woff');
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Zilla Slab'), local('ZillaSlab-Regular'), url(https://fonts.gstatic.com/s/zillaslab/v1/pQTSOfVcqKWtc7NVLbIJ7L3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Zilla Slab Bold'), local('ZillaSlab-Bold'), url(https://fonts.gstatic.com/s/zillaslab/v1/5alS-fi1sAYG-KJydQxv8HbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+
 body {
   font-size: 16px;
+  font-family: "Zilla Slab", Helvetica, sans-serif;
 }
 
 /* Header Styles */
 
 header {
-  border: 1px solid red ;
+  /*(border: 1px solid red;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,14 +36,23 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
-header .container {
-  border: 1px solid green;
-  display: flex;
-  align-items: center;
+.colmar h1 {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
-header .colmar {
-  font-weight: bold;
+.colmar .bold {
+  font-weight: 700;
+}
+
+nav li {
+  font-size: 1.3rem;
+}
+
+header .container {
+  /*border: 1px solid green;*/
+  display: flex;
+  align-items: center;
 }
 
 header .logo {
@@ -35,7 +64,7 @@ header img {
 }
 
 header nav {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 header ul {
@@ -50,27 +79,36 @@ header li {
 /* Banner Styles */
 
 #banner {
-  border: 2px dotted red;
+  /*border: 2px dotted red;*/
   display: inline-flex;
   align-items: center;
   background-color: rgb(218, 218, 218);
 }
 
 #banner img {
-  width: 60%;
+  width: 55%;
   margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 #banner .content {
-  border: 2px dotted blue;
+  /*border: 2px dotted blue;*/
 }
 
 #banner h3 {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 3.5rem;
 }
 
 #banner p {
   margin: 2rem 0 2rem 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.button span {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 #banner .button {
@@ -78,38 +116,65 @@ header li {
   color: rgb(255, 255, 255);
   padding: 0.5rem 0 0.5rem 0;
   text-align: center;
+  width: 100%;
+  /*border: 2px dotted orange;*/
 }
 
 /* Main Styles */
 
 #main {
-  border: 2px dashed purple;
+  /*border: 2px dashed purple;*/
   display: inline-flex;
   background-color: rgb(255, 255, 255);
 }
 
 #main .info {
-  border: 2px dotted firebrick;
+  /*border: 2px dotted firebrick;*/
 }
 
 #main .info img {
-  width: 60%;
+  width: 90%;
   margin: 2rem 1.5rem 2rem 1.5rem;
 }
 
 #main .info p {
-  margin: 1.5rem 0 1.5rem 0;
+  margin: 0 0 2.5rem 1.5rem;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+#main .info h4 {
+  margin: 2rem 0 1.5rem 1.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#main .info span {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 #main .column {
-  border: 2px dashed orange;
-  width: auto;
+  /*border: 2px dashed orange;*/
+  width: 50%;
 }
 
 #main .column .container {
-  border: 2px dashed black;
+  /*border: 2px dashed black;*/
+  border-left: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
+}
+
+#main .column .container:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+#main .column a:hover {
+  text-decoration: underline;
 }
 
 #main .column img {
@@ -118,37 +183,40 @@ header li {
 }
 
 #main .column h6 {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-#main .column span {
+#main .column p {
   margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
-.column .lecture {
-  background-color: rgb(218, 218, 218);
-}
 
 .column a {
-  color: rgb(141, 201, 247);
+  color: rgb(91, 184, 255);
+  font-size: 1.3rem;
 }
 
 /* Courses Styles */
 
 #courses {
-  border: 2px ridge blue;
+  /*border: 2px ridge blue;*/
   background-color: rgb(218, 218, 218);
 }
 
-#courses h3 {
+#courses h4 {
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 #courses .content {
-  border: 2px groove red;
+  /*border: 2px groove red;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -156,7 +224,7 @@ header li {
 }
 
 #courses .container {
-  border: 2px groove green;
+  /*border: 2px groove green;*/
   background-color: rgb(255, 255, 255);
   width: 20rem;
   margin: 0 1rem 0.5rem 1rem;
@@ -168,41 +236,123 @@ header li {
 
 #courses h5 {
   font-weight: bold;
+  font-size: 1.5rem;
   margin: 1rem 0 0.5rem 1rem;
 }
 
 #courses span {
   margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 #courses p {
   margin: 0.5rem 0 1.5rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 300;
 }
 
 /* Exhibit Styles */
 
 #exhibit {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
+}
+
+#exhibit h3 {
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#exhibit h4 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+#exhibit .content p {
+  margin: 1.5rem 0 2rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 300;
 }
 
 #exhibit .content {
-  border: 2px dashed blue;
+  /*border: 2px dashed blue;*/
   display: flex;
   justify-content: space-between;
 }
 
+#exhibit .column h6 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+#exhibit .column p {
+  margin: 1rem 0 2rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
 video {
-  width: 40%;
+  width: 80%;
+  margin: 0 1rem 1.5rem 1.5rem;
+  /*border: 3px dashed lightgreen;*/
+  height: 24rem;
+}
+
+.vid {
+  /*border: 1px solid black;*/
+  text-align: left;
+  width: 65%;
 }
 
 #exhibit .column {
-  border: 2px dotted green;
+  /*border: 2px dotted green;*/
+  width: 35%;
 }
 
-#exhibit img {
-  width: 45%;
+#exhibit .work img {
+  width: 60%;
+  margin: 1rem;
+}
+
+#exhibit .newyork img {
+  width: 36%;
+  margin: 1rem;
 }
 
 #exhibit .container {
-  border: 1px dashed orange;
+  /*border: 1px dashed orange;*/
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  /*border: 1px dashed black;*/
+}
+
+/* Footer Styles */
+
+footer {
+  height: 5rem;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer p, li {
+  margin: 1rem 1.5rem 0 1.5rem;
+  font-size: 1.2rem;
 }
